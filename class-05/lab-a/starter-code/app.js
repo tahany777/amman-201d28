@@ -51,9 +51,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-let sum1 = a + b + c;
-let multiplay = a* b* c;
-return[sum1, multiplay, `${a} and ${b} and ${c} sum to ${sum1}.`, `The product of ${a} and ${b} and ${c} is ${multiplay}.`];
+let totalSum = sum(a, b)[0] + c;
+let totalMulty = multiply(a, b)[0] * c;
+return[totalSum, totalMulty, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The product of ${a} and ${b} and ${c} is ${totalMulty}.`];
 }
 
 //console.log(sumAndMultiply(4, 7, 5));
